@@ -37,6 +37,12 @@
    return
  output 2
  return
+
+
+ Arguments are currently wrong in the VM.  There needs to be a num_arguments byte or long long or something at the beginning
+ so that arguments can be added over time to the interface.  Positional arguments needs to be the same for everything within
+ a program/namespace.  Arguments can either be an immediate value, or for binary values, they can be a relative jump from the
+ beginning of the arguments table.  There isn't bounds checking done there yet, but that should be trivial to add everywhere.
  
  */
 
